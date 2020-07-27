@@ -25,7 +25,7 @@ namespace WinformsJsonDevExpressSample
         {
             using (var cliente = new HttpClient())
             {
-                var respuesta = await cliente.GetAsync("https://jsonplaceholder.typicode.com/todos");
+                var respuesta = await cliente.GetAsync("https://jsonplaceholder.typicode.com/todos"); //retrieve the data
 
                 var contenido = await respuesta.Content.ReadAsStringAsync();
 
